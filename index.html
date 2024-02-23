@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="validacion.js"></script>
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,38 +16,27 @@
   </style>
 </head>
 <body>
-
-  <!-- Sign-up form start -->
-
-  Stay updated!
-
-  Join 60,000+ product managers receiving monthly updates on:
-
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
-
-  Email address
-  email@company.com
-
-  Subscribe to monthly newsletter
-
-  <!-- Sign-up form end -->
-
-  <!-- Success message start -->
-
-  Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
-
-  <!-- Success message end -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="fondo">
+    <div class="foto">
+      <img src="./assets/images/illustration-sign-up-mobile.svg " class="svg-mobile">
+      <img src="./assets/images/illustration-sign-up-desktop.svg" class="svg-desktop">
+    </div>
+    <div class="datos">
+      <div class="margen">
+        <h1 class="separacion">Stay updated!</h1>
+        <p class="separacion">Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul class="separacion">
+          <li>Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are a success</li>
+          <li>And much more!</li>
+        </ul>
+        <h3>Email address</h3>
+        <input type="email" placeholder="email@company.com" class="em separacion">
+        <div id="submitButton" class="boton">
+          <h2>Subscribe to monthly newsletter</h2>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>
