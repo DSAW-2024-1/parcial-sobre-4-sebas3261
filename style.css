@@ -63,16 +63,39 @@ h3{
 .invalid {
     border: 1px solid red;
     background-color: #FFE8E6;
-  }
+}
   
+.request{
+    display: flex;
+    justify-content: space-between;
+}
+
+.error-message {
+    display: none; /* Por defecto, oculta el mensaje de error */
+    color: red; /* Color rojo para el mensaje de error */
+    margin-top: 5px; /* Opcional: espacio superior para separar el mensaje de error del campo de entrada */
+}
+
+.fondofinal{
+    background-color: white;
+    padding: 5%;
+    padding-top:30%;
+    
+}
 
 @media screen and (min-width: 768px)
 {
+
     .fondo{
         background-color: white;
         display: flex;
         flex-direction: row-reverse;
         border-radius: 20px;
+    }
+
+    .fondofinal{
+        padding: 0%;
+        margin:0;
     }
 
     body, html {
@@ -108,4 +131,5 @@ h3{
         justify-content: center;
         align-items: center;
     }
+
 }

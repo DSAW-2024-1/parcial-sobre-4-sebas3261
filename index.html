@@ -16,26 +16,39 @@
   </style>
 </head>
 <body>
-  <div class="fondo">
-    <div class="foto">
-      <img src="./assets/images/illustration-sign-up-mobile.svg " class="svg-mobile">
-      <img src="./assets/images/illustration-sign-up-desktop.svg" class="svg-desktop">
-    </div>
-    <div class="datos">
-      <div class="margen">
-        <h1 class="separacion">Stay updated!</h1>
-        <p class="separacion">Join 60,000+ product managers receiving monthly updates on:</p>
-        <ul class="separacion">
-          <li>Product discovery and building what matters</li>
-          <li>Measuring to ensure updates are a success</li>
-          <li>And much more!</li>
-        </ul>
-        <h3>Email address</h3>
-        <input type="email" placeholder="email@company.com" class="em separacion">
-        <div id="submitButton" class="boton">
-          <h2>Subscribe to monthly newsletter</h2>
+  <div class="aparece">
+    <div class="fondo">
+      <div class="foto">
+        <img src="./assets/images/illustration-sign-up-mobile.svg " class="svg-mobile">
+        <img src="./assets/images/illustration-sign-up-desktop.svg" class="svg-desktop">
+      </div>
+      <div class="datos">
+        <div class="margen">
+          <h1 class="separacion">Stay updated!</h1>
+          <p class="separacion">Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul class="separacion">
+            <li>Product discovery and building what matters</li>
+            <li>Measuring to ensure updates are a success</li>
+            <li>And much more!</li>
+          </ul>
+          <div class="request">
+            <h3>Email address</h3>
+            <p class="error-message">Valid email required</p>
+          </div>
+          <input type="email" placeholder="email@company.com" class="em separacion">
+          <div id="submitButton" class="boton">
+            <h2>Subscribe to monthly newsletter</h2>
+          </div>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="fondofinal " style="display: none;">
+    <img src="./assets/images/icon-success.svg">
+    <h1>Thanks for subscribing!</h1>
+    <p>A confirmation email has been sent to <span id="confirmed-email" style="font-weight: bold;"></span>. Please open it and click the button inside to confirm your subscription</p>
+    <div id="dismissButton" class="boton">
+      <h2>Dismiss message</h2>
     </div>
   </div>
 </body>
